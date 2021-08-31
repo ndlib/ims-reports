@@ -1,0 +1,37 @@
+---
+name: Shelf Report
+inputs:
+- name: tray_type_limit
+  label: Limit by tray type
+  type: checkbox
+- name: tray_type
+  label: Tray Type
+  type: multi-select
+  options:
+  - - AL
+    - AL
+  - - BH
+    - BH
+  - - BL
+    - BL
+  - - CH
+    - CH
+  - - CL
+    - CL
+  - - DH
+    - DH
+  - - DL
+    - DL
+  - - EH
+    - EH
+  - - EL
+    - EL
+  - - SHELF
+    - SHELF
+- name: shelf_limits
+  label: Include Shelves
+  type: radio
+  options:
+  - all: ''
+  - under_capacity: HAVING count(t.id) < tt.trays_per_shelf
+  - over_capacity: HAVING count(t.id) > tt.trays_per_shelf
