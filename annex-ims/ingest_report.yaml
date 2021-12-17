@@ -3,6 +3,7 @@ name: Ingest Report
 inputs:
 - name: user_limit
   label: Limit by user
+  type: checkbox
 - name: userid
   label: User ID
   type: input
