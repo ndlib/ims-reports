@@ -6,7 +6,7 @@ inputs:
   type: checkbox
 - name: userid
   label: User ID
-  type: input
+  type: textbox
 - name: tray_type_limit
   label: Limit by tray type
   type: checkbox
