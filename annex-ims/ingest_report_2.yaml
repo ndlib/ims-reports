@@ -1,15 +1,16 @@
 ---
 name: Ingest Report
-inputs:
+parameters:
 - name: user_limit
   label: Limit by user
+  type: checkbox
 - name: tray_type_limit
   label: Limit by tray type
   type: checkbox
 - name: tray_type
   label: Tray Type
   type: multi-select
-  options:
+  values:
   - - AL
     - AL
   - - BH
