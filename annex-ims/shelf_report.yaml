@@ -1,5 +1,4 @@
 ---
-name: Shelf Report
 base_sql: SELECT s.barcode AS "shelf", count (t.id) AS "trays", tt.trays_per_shelf
   AS "expected" , s.size AS "tray_type" FROM shelves s INNER JOIN trays t ON s.id
   = t.shelf_id INNER JOIN tray_types tt ON s.size = tt.code TRAY_TYPES GROUP BY s.barcode,
