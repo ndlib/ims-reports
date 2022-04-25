@@ -42,6 +42,7 @@ parameters:
   label: Tray Fill
   type: number
   step: 1
+  min: 0
   sql:
     - key: TRAY_FILL
       value: HAVING SUM(thickness)/tt.capacity::decimal * 100 < VALUE
